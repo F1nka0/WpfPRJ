@@ -1,0 +1,17 @@
+C:\Users\xbox0\source\repos\BorisPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.exe
+C:\Users\xbox0\source\repos\BorisPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.deps.json
+C:\Users\xbox0\source\repos\BorisPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.runtimeconfig.json
+C:\Users\xbox0\source\repos\BorisPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.runtimeconfig.dev.json
+C:\Users\xbox0\source\repos\BorisPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.dll
+C:\Users\xbox0\source\repos\BorisPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.pdb
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.csprojAssemblyReference.cache
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\BorisPRJ_MarkupCompile.cache
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\BorisPRJ_MarkupCompile.lref
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.g.resources
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.AssemblyInfoInputs.cache
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.AssemblyInfo.cs
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.dll
+C:\Users\xbox0\source\repos\BorisPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.pdb
