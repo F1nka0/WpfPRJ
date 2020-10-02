@@ -5,18 +5,73 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BorisPRJ"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
-        <TextBlock TextAlignment="Center" Text="Наличие дизинфецирующих средств в туалетах" Margin="80,91,594,278" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock TextAlignment="Center" Text="Проветривание аудиторий" Margin="234,100,0,0" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140"/>
-        <TextBlock TextAlignment="Center" Text="Проветривание коридоров" Margin="400,100,0,0" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140"/>
-        <TextBlock TextAlignment="Center" Text="2 этаж" Margin="37,173,0,0" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <RadioButton Content="Да" HorizontalAlignment="Left" Margin="126,166,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Нет" HorizontalAlignment="Left" Margin="126,186,0,0" VerticalAlignment="Top"/>
-        <ComboBox >     
-            <Line X1="100" X2="200" Margin="196,0,0,0"/>
+        <Grid.RowDefinitions>
 
-        <Label Content="4 этаж" HorizontalAlignment="Left" Margin="32,246,0,0" VerticalAlignment="Top"/>
+            <RowDefinition Height="200"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock TextAlignment="Center" Text="Наличие дизинфецирующих средств в туалетах" Margin="58,13,0,0" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="144"/>
+        <TextBlock TextAlignment="Center" Text="Проветривание аудиторий" Margin="191,29,0,0" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140"/>
+        <TextBlock TextAlignment="Center" Text="Проветривание коридоров" Margin="320,29,0,0" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140"/>
+        <TextBlock TextAlignment="Center" Text="2 этаж" Margin="10,82,0,0" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
+        <RadioButton GroupName="11" Content="Да" HorizontalAlignment="Left" Margin="111,75,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="11" Content="Нет" HorizontalAlignment="Left" Margin="111,95,0,0" VerticalAlignment="Top" IsChecked="True" />
+
+        <RadioButton GroupName="21" Content="Да" HorizontalAlignment="Left" Margin="111,154,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="21" Content="Нет" HorizontalAlignment="Left" Margin="111,174,0,0" VerticalAlignment="Top" IsChecked="True"/>
+
+        <RadioButton GroupName="12" Content="Да" HorizontalAlignment="Left" Margin="244,75,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="12" Content="Нет" HorizontalAlignment="Left" Margin="244,95,0,0" VerticalAlignment="Top" IsChecked="True"/>
+
+        <RadioButton GroupName="22" Content="Да" HorizontalAlignment="Left" Margin="244,154,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="22" Content="Нет" HorizontalAlignment="Left" Margin="244,174,0,0" VerticalAlignment="Top" IsChecked="True"/>
+
+        <RadioButton GroupName="13" Content="Да" HorizontalAlignment="Left" Margin="371,75,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="13" Content="Нет" HorizontalAlignment="Left" Margin="371,95,0,0" VerticalAlignment="Top" IsChecked="True"/>
+
+        <RadioButton GroupName="23" Content="Да" HorizontalAlignment="Left" Margin="371,154,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="23" Content="Нет" HorizontalAlignment="Left" Margin="371,174,0,0" VerticalAlignment="Top" IsChecked="True"/>
+
+        <TextBlock Text="4 этаж" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top"/>
+        <TextBox Height="24" Margin="732,57,10,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label Content="Недомогание" HorizontalAlignment="Left" Margin="469,12,0,0" VerticalAlignment="Top"/>
+        <Label Content="ФИО" Margin="526,41,0,0" VerticalAlignment="Top" Padding="0,0,0,0" HorizontalAlignment="Left"/>
+        <Label  Content="Группа" Margin="615,41,0,0" VerticalAlignment="Top" Padding="0,0,0,0" HorizontalAlignment="Left" Width="49" Height="16" RenderTransformOrigin="0.5,0.5"/>
+        <StackPanel >
+            <TextBox Height="24" Margin="469,57,190,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox Height="24" Margin="469,3,190,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox Height="24" Margin="469,3,190,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox Height="24" Margin="469,3,190,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox Height="24" Margin="469,3,190,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBox Height="24" Margin="615,57,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" />
+            <TextBox Margin="615,3,0,0" Text="" TextWrapping="Wrap" HorizontalAlignment="Left" Width="40" Height="24" VerticalAlignment="Top"/>
+            <TextBox Height="24" Margin="615,3,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40"/>
+            <TextBox Height="24" Margin="615,3,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40"/>
+            <TextBox Height="24" Margin="615,3,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40"/>
+            <!---->
+            <!---->
+
+
+        </StackPanel>
+        <TextBox Height="24" Margin="658,138,71,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Height="24" Margin="658,84,71,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Height="24" Margin="658,57,71,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Height="24" Margin="658,111,71,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Height="24" Margin="658,165,71,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+        <TextBox Height="24" Margin="732,84,10,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Height="24" Margin="732,111,10,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label  Content="Температура" Margin="658,41,0,0" VerticalAlignment="Top" Padding="0,0,0,0" HorizontalAlignment="Left" Width="71" Height="16" RenderTransformOrigin="0.5,0.5"/>
+        <Label  Content="Причина
+                " Margin="732,41,0,0" VerticalAlignment="Top" Padding="0,0,0,0" HorizontalAlignment="Left" Width="53" Height="16" RenderTransformOrigin="0.5,0.5"/>
+
+        <TextBox Height="24" Margin="732,138,10,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+        <TextBox Height="24" Margin="732,165,10,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
     </Grid>
 </Window>
