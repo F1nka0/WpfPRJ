@@ -21,17 +21,13 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Orientation="Horizontal">
-            <ComboBox Height="25" Width="300" Margin="10" IsEditable="True" ToolTip="Дежурный"></ComboBox>
-            <ComboBox Height="25" Width="70" ToolTip="Этаж">
-                <TextBlock>1-3 этаж</TextBlock>
-                <TextBlock>2-4 этаж</TextBlock>
-            </ComboBox>
+            <ComboBox x:Name="dutyComboBox" Height="25" Width="300" Margin="10" IsEditable="True" ToolTip="Дежурный" />
+            <RadioButton Margin = "5" VerticalAlignment = "Center" x:Name="firstFloorsRadio" Checked="ChangeFloorsToFirst">1-3 этажи</RadioButton>
+            <RadioButton Margin = "5" VerticalAlignment = "Center" Checked="ChangeFloorsToSecond">2-4 этажи</RadioButton>
         </StackPanel>
 
-        <Button Grid.Column="1" Content="Сформировать отчет" Margin="10"></Button>
-
         <!--Toilets-->
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Margin="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -48,31 +44,35 @@
             <TextBlock Grid.Column="2" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center">Проветривание аудиторий</TextBlock>
             <TextBlock Grid.Column="3" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center">Проветривание коридоров</TextBlock>
 
-            <Label Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">2 этаж</Label>
-            <Label Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">4 этаж</Label>
+            <Label x:Name ="firstFloorLabel"  Grid.Row="1" Margin = "5" VerticalAlignment = "Center">1 этаж</Label>
+            <Label x:Name ="secondFloorLabel"  Grid.Row="2" Margin = "5" VerticalAlignment = "Center">3 этаж</Label>
+
+           <!-- <Label x:Name="thirdFloorLabel" Grid.Row="2" Margin = "5" VerticalAlignment = "Center">3 этаж</Label>
+            <Label x:Name="fourthFloorLabel" Grid.Row="2" Margin = "5" VerticalAlignment = "Center">4 этаж</Label> -->
+
 
             <StackPanel VerticalAlignment="Center" Grid.Row="1" Grid.Column="1">
-                <RadioButton GroupName="toilets1" HorizontalAlignment="Center">Да</RadioButton>
+                <RadioButton GroupName="toilets1" HorizontalAlignment="Center" x:Name="toilets1Checked">Да</RadioButton>
                 <RadioButton GroupName="toilets1" HorizontalAlignment="Center" IsChecked="True">Нет</RadioButton>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="2" VerticalAlignment = "Center">
-                <RadioButton GroupName="rooms1" HorizontalAlignment="Center">Да</RadioButton>
+                <RadioButton GroupName="rooms1" HorizontalAlignment="Center" x:Name="rooms1Checked">Да</RadioButton>
                 <RadioButton GroupName="rooms1" HorizontalAlignment="Center" IsChecked="True">Нет</RadioButton>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="3" VerticalAlignment = "Center">
-                <RadioButton GroupName="coridors1" HorizontalAlignment="Center">Да</RadioButton>
+                <RadioButton GroupName="coridors1" HorizontalAlignment="Center" x:Name="coridors1Checked">Да</RadioButton>
                 <RadioButton GroupName="coridors1" HorizontalAlignment="Center" IsChecked="True">Нет</RadioButton>
             </StackPanel>
             <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment = "Center">
-                <RadioButton GroupName="toilets2" HorizontalAlignment="Center">Да</RadioButton>
+                <RadioButton GroupName="toilets2" HorizontalAlignment="Center" x:Name="toilets2Checked">Да</RadioButton>
                 <RadioButton GroupName="toilets2" HorizontalAlignment="Center" IsChecked="True">Нет</RadioButton>
             </StackPanel>
             <StackPanel Grid.Row="2" Grid.Column="2" VerticalAlignment = "Center">
-                <RadioButton GroupName="rooms2" HorizontalAlignment="Center">Да</RadioButton>
+                <RadioButton GroupName="rooms2" HorizontalAlignment="Center" x:Name="rooms2Checked">Да</RadioButton>
                 <RadioButton GroupName="rooms2" HorizontalAlignment="Center" IsChecked="True">Нет</RadioButton>
             </StackPanel>
             <StackPanel Grid.Row="2" Grid.Column="3" VerticalAlignment = "Center">
-                <RadioButton GroupName="coridors2" HorizontalAlignment="Center">Да</RadioButton>
+                <RadioButton GroupName="coridors2" HorizontalAlignment="Center" x:Name="coridors2Checked">Да</RadioButton>
                 <RadioButton GroupName="coridors2" HorizontalAlignment="Center" IsChecked="True">Нет</RadioButton>
             </StackPanel>
 
@@ -95,12 +95,12 @@
             <Label Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">Время</Label>
             <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Объект контроля</Label>
 
-            <TextBox Grid.Row="2" Grid.Column="0" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="0" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="0" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" MaxHeight="30"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="0" Margin="5" MaxHeight="30" x:Name="object1Time"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" MaxHeight="30" x:Name="object1"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="0" Margin="5" MaxHeight="30" x:Name="object2Time"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" MaxHeight="30" x:Name="object2"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="0" Margin="5" MaxHeight="30" x:Name="object3Time"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" MaxHeight="30" x:Name="object3"></TextBox>
 
         </Grid>
         <!--Rooms-->
@@ -126,18 +126,18 @@
             <Label Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">Фактически</Label>
             <Label Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">Отсутствует</Label>
 
-            <TextBox Grid.Row="2" Grid.Column="0" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="2" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="3" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="0" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="2" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="3" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="0" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="2" Margin="5" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="3" Margin="5" MaxHeight="30"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="0" Margin="5" MaxHeight="30" x:Name="missed1Group"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" MaxHeight="30" x:Name="missed1List"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="2" Margin="5" MaxHeight="30" x:Name="missed1Fact"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="3" Margin="5" MaxHeight="30" x:Name="missed1Missed"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="0" Margin="5" MaxHeight="30" x:Name="missed2Group"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" MaxHeight="30" x:Name="missed2List"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="2" Margin="5" MaxHeight="30" x:Name="missed2Fact"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="3" Margin="5" MaxHeight="30" x:Name="missed2Missed"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="0" Margin="5" MaxHeight="30" x:Name="missed3Group"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" MaxHeight="30" x:Name="missed3List"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="2" Margin="5" MaxHeight="30" x:Name="missed3Fact"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="3" Margin="5" MaxHeight="30" x:Name="missed3Missed"></TextBox>
             
 
         </Grid>
@@ -166,26 +166,26 @@
             <Label Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">Температура</Label>
             <Label Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">Причина</Label>
 
-            <TextBox Grid.Row="2" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="5" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="5" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="5" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="5" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="6" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="6" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="6" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="6" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentInitials1"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentGroup1"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentTemperature1"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentReason1"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentInitials2"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentGroup2"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentTemperature2"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentReason2"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentInitials3"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentGroup3"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentTemperature3"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentReason3"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentInitials4"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentGroup4"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentTemperature4"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentReason4"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentInitials5"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentGroup5"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentTemperature5"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="boredStudentReason5"></TextBox>
 
 
         </Grid>
@@ -211,36 +211,39 @@
             <Label Grid.ColumnSpan="4" Margin="5" FontWeight="Bold" HorizontalAlignment="Center">Нарушение дисциплины</Label>
             <Label Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">ФИО</Label>
             <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Группа</Label>
-            <Label Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">Температура</Label>
-            <Label Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">Причина</Label>
+            <Label Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Нарушение"/>
+            <Label Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Меры"/>
 
-            <TextBox Grid.Row="2" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="3" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="4" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="5" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="5" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="5" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="5" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="6" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="6" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="6" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
-            <TextBox Grid.Row="6" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentName1"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentGroup1"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentTemperature1"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentReason1"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentName2"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentGroup2"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentTemperature2"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentReason2"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentName3"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentGroup3"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentTemperature3"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentReason3"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentName4"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentGroup4"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentTemperature4"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentReason4"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="0" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentName5"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentGroup5"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="2" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentTemperature5"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="3" Margin="5" MinHeight="20" MaxHeight="30" x:Name="faultStudentReason5"></TextBox>
                                                                             
 
         </Grid>
 
         <DockPanel Grid.Row="3" Grid.Column="1">
             <TextBlock FontWeight="Bold" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="5">Замечания и предложения</TextBlock>
-            <TextBox DockPanel.Dock="Bottom" Margin="5"></TextBox>
+            <TextBox x:Name="commentsBox" DockPanel.Dock="Bottom" Margin="5"></TextBox>
         </DockPanel>
+        
+        <Button x:Name="createReportButton" Grid.Column="1" Content="Сформировать отчет" Margin="10" Click="createReport"></Button>
+
     </Grid>
 </Window>
