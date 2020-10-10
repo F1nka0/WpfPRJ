@@ -11,12 +11,12 @@ namespace BorisPRJ.DataTypes
         private int factStudents;
         private int missedStudent;
 
-        public Group(String title, int totalStudents, int factStudents)
+        public Group(String title, int totalStudents, int factStudents, int missedStudent)
         {
             this.title = title;
             this.totalStudents = totalStudents;
             this.factStudents = factStudents;
-            this.missedStudent = totalStudents - factStudents;
+            this.missedStudent = missedStudent;
         }
 
         public String getTitle()

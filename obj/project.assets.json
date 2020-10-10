@@ -8,25 +8,24 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\xbox0\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Kotyara\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xbox0\\OneDrive\\Рабочий стол\\boris\\WpfPRJ\\BorisPRJ.csproj",
+      "projectUniqueName": "C:\\Users\\Kotyara\\Desktop\\CreateReport\\WpfPRJ\\BorisPRJ.csproj",
       "projectName": "BorisPRJ",
-      "projectPath": "C:\\Users\\xbox0\\OneDrive\\Рабочий стол\\boris\\WpfPRJ\\BorisPRJ.csproj",
-      "packagesPath": "C:\\Users\\xbox0\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xbox0\\OneDrive\\Рабочий стол\\boris\\WpfPRJ\\obj\\",
+      "projectPath": "C:\\Users\\Kotyara\\Desktop\\CreateReport\\WpfPRJ\\BorisPRJ.csproj",
+      "packagesPath": "C:\\Users\\Kotyara\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kotyara\\Desktop\\CreateReport\\WpfPRJ\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\xbox0\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Kotyara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -84,7 +83,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

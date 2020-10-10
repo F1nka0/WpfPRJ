@@ -34,3 +34,21 @@ C:\Users\xbox0\OneDrive\Рабочий стол\boris\WpfPRJ\obj\Debug\netcoreap
 C:\Users\xbox0\OneDrive\Рабочий стол\boris\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.dll
 C:\Users\xbox0\OneDrive\Рабочий стол\boris\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.pdb
 C:\Users\xbox0\OneDrive\Рабочий стол\boris\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.genruntimeconfig.cache
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.exe
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.deps.json
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.runtimeconfig.json
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.runtimeconfig.dev.json
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.dll
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\bin\Debug\netcoreapp3.0\BorisPRJ.pdb
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.csprojAssemblyReference.cache
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ_MarkupCompile.cache
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.g.resources
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.AssemblyInfoInputs.cache
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.AssemblyInfo.cs
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.csproj.CoreCompileInputs.cache
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.dll
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.pdb
+C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.genruntimeconfig.cache

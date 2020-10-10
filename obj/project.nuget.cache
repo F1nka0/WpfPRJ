@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "lF5J4QsNix9vPR+EgmCkovCrXuDq2oXU4jH4UTPYkG5/OdaHD2c1ptpFmTTbcy8N2wssDgIK5qOXTNcBEhHJfw==",
+  "dgSpecHash": "umjBoLl4BDPObt43Do6em2A95Xtp8Ql6DIJn+GpgJx5Z9cWBGpjrsoaSBAW1VDBBl/kk8jhGq4sIFffDHaveIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xbox0\\OneDrive\\Рабочий стол\\boris\\WpfPRJ\\BorisPRJ.csproj",
+  "projectFilePath": "C:\\Users\\Kotyara\\Desktop\\CreateReport\\WpfPRJ\\BorisPRJ.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\xbox0\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
-    "C:\\Users\\xbox0\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
-    "C:\\Users\\xbox0\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
-    "C:\\Users\\xbox0\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+    "C:\\Users\\Kotyara\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Kotyara\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Kotyara\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Kotyara\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512"
   ],
   "logs": []
 }
