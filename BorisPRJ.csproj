@@ -6,4 +6,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.0\Otchyot_Shablon_K_dezhurnogo.xml" />
+  </ItemGroup>
+
 </Project>

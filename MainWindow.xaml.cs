@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-
+using System.IO;
+using System.Xml;
 namespace BorisPRJ
 {
     /// <summary>
@@ -15,7 +16,27 @@ namespace BorisPRJ
             InitializeComponent();
             firstFloorsRadio.IsChecked = true;
         }
+        
+        public void Create() 
+        {
+            File.Copy(@"Otchyot_Shablon_K_dezhurnogo.xml", @"C:\Users\xbox0\OneDrive\Рабочий стол\test.txt");
+            StreamReader Container = new StreamReader(File.Open(@"C:\Users\xbox0\OneDrive\Рабочий стол\test.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite));
+            string read = Container.ReadToEnd();
+            Container.Close();
+            read =read.Replace("datedatedate", System.DateTime.Now.ToString());//а вот тут я 15 минут не могу понять, что этот расширяющий метод возвращает изменённут строку , а не меняет её 
+            /*
+             тута
+             */
 
+
+
+            StreamWriter streamWriter = new StreamWriter(File.Open(@"C:\Users\xbox0\OneDrive\Рабочий стол\test.txt",FileMode.Open));
+            streamWriter.Write(read);
+            streamWriter.Close();
+            File.Move(@"C:\Users\xbox0\OneDrive\Рабочий стол\test.txt", @"C:\Users\xbox0\OneDrive\Рабочий стол\test.xml");
+            
+            
+        }
         private void createReport(object sender, RoutedEventArgs e)
         {
             missed1List.Text = missed1List.Text.Equals("")?"0":missed1List.Text;
@@ -55,6 +76,7 @@ namespace BorisPRJ
             objects.Add(new Object(object2Time.Text, object2Time.Text));
             objects.Add(new Object(object3Time.Text, object3Time.Text));
 
+            Create();
         }
 
         private void ChangeFloorsToFirst(object sender, RoutedEventArgs e)
@@ -65,6 +87,7 @@ namespace BorisPRJ
 
         private void ChangeFloorsToSecond(object sender, RoutedEventArgs e)
         {
+            
             firstFloorLabel.Content = "2 этаж";
             secondFloorLabel.Content = "4 этаж";
         }

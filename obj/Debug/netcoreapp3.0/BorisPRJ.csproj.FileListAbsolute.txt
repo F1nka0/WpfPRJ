@@ -52,3 +52,22 @@ C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.cs
 C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.dll
 C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.pdb
 C:\Users\Kotyara\Desktop\CreateReport\WpfPRJ\obj\Debug\netcoreapp3.0\BorisPRJ.genruntimeconfig.cache
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\bin\Debug\netcoreapp3.0\BorisPRJ.exe
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\bin\Debug\netcoreapp3.0\BorisPRJ.deps.json
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\bin\Debug\netcoreapp3.0\BorisPRJ.runtimeconfig.json
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\bin\Debug\netcoreapp3.0\BorisPRJ.runtimeconfig.dev.json
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\bin\Debug\netcoreapp3.0\BorisPRJ.dll
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\bin\Debug\netcoreapp3.0\BorisPRJ.pdb
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.csprojAssemblyReference.cache
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ_MarkupCompile.cache
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.g.resources
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.AssemblyInfoInputs.cache
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.AssemblyInfo.cs
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.csproj.CoreCompileInputs.cache
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.dll
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.pdb
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.genruntimeconfig.cache
+C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ_Content.g.cs
