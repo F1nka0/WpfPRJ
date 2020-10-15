@@ -70,4 +70,3 @@ C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\Bor
 C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.dll
 C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.pdb
 C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ.genruntimeconfig.cache
-C:\Users\xbox0\OneDrive\Рабочий стол\gopa\obj\Debug\netcoreapp3.0\BorisPRJ_Content.g.cs

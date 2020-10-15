@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="bin\Debug\netcoreapp3.0\Otchyot_Shablon_K_dezhurnogo.xml" />
+    <Folder Include="bin\Debug\netcoreapp3.0\" />
   </ItemGroup>
 
 </Project>
